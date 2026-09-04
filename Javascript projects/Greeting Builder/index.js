@@ -14,7 +14,9 @@ function getGreeting(timeOfDay) {
   }
 }
 function createGreeting(firstname, lastname, timeOfDay) {
-  console.log(getGreeting(timeOfDay) + ", " + formatName(firstname, lastname));
+  let greeting =
+    getGreeting(timeOfDay) + ", " + formatName(firstname, lastname);
+  return greeting;
 }
 console.log(createGreeting("Ava", "Stone", "morning"));
 console.log(createGreeting("Noah", "Kim", "evening"));
